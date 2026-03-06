@@ -24,8 +24,6 @@ import {
 } from './index.constants';
 import { Room } from './types';
 
-// add verivy client
-
 const wsHandleError = (e: Error) => {
   console.log(e);
 };
@@ -138,7 +136,7 @@ const wsConfigure = (port: number, verifyClient: VerifyClientCallbackAsync) => {
                 }
               : {
                   winnerId,
-                }
+                },
           ),
         });
       } else if (type === GAME_STATUS_MARKING) {
